@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación por Pares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./evaluacion.png" type="image/x-icon">
+
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+        @theme {
+            --font-sans: "Roboto", sans-serif;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body
+    class="bg-linear-to-tr from-[#006d77] via-[#83c5be] to-[#006d77] text-[#edf6f9] p-4 sm:p-8 font-sans min-h-screen flex flex-col items-center justify-center">
+
+    <div
+        class="max-w-4xl w-full bg-slate-950/80 border border-[#83c5be]/30 p-6 sm:p-10 rounded-2xl shadow-2xl transition-all backdrop-blur-md">
+
+        <header class="text-center mb-8 border-b border-[#83c5be]/20 pb-6">
+            <h1
+                class="text-3xl sm:text-4xl font-black tracking-wide bg-linear-to-r from-[#edf6f9] to-[#83c5be] bg-clip-text text-transparent uppercase font-title">
+                Evaluación por Pares
+            </h1>
+        </header>
+
+        <div
+            class="flex flex-col items-center justify-center bg-black/40 p-5 rounded-xl border border-[#006d77]/40 mb-8">
+            <span class="text-xs uppercase text-[#83c5be] font-mono tracking-widest mb-1">Integrantes de la Clase</span>
+            <span class="text-5xl font-black text-[#edf6f9]">13</span>
+        </div>
+
+        <div class="mb-8 flex justify-center">
+            <button id="generar-parejas"
+                class="bg-linear-to-r from-[#83c5be] to-[#006d77] hover:from-[#edf6f9] hover:to-[#83c5be] text-slate-950 font-bold px-10 py-4 rounded-xl text-base tracking-wider uppercase cursor-pointer transition-all active:scale-98 shadow-lg shadow-[#006d77]/20 font-title">
+                Calcular Asignaciones
+            </button>
+        </div>
+
+        <div id="resultado"
+            class="bg-black/30 p-4 sm:p-6 rounded-xl border border-[#83c5be]/20 min-h-[180px] flex items-center justify-center transition-all">
+            <p class="text-[#edf6f9]/40 italic text-sm text-center">
+                Presiona el botón superior para ejecutar el algoritmo de asignación por pares
+            </p>
+        </div>
+
+    </div>
+
+    <script src="./clase-evaluadores.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
