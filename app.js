@@ -10,9 +10,9 @@ if (BOTON_GENERAR && CONTENEDOR_RESULTADO) {
                 <table class="w-full border-collapse text-sm text-left">
                     <thead>
                         <tr class="border-b border-[#83c5be]/30 text-[#83c5be] font-mono uppercase tracking-wider text-xs">
-                            <th class="py-3 px-4">🔍 Revisor</th>
-                            <th class="py-3 px-4">📝 Alumno a Revisar</th>
-                            <th class="py-3 px-4">📂 Repositorio Asignado</th>
+                            <th class="py-3 px-4">Revisor</th>
+                            <th class="py-3 px-4">Alumno a Revisar</th>
+                            <th class="py-3 px-4">Repositorio Asignado</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-[#006d77]/20">

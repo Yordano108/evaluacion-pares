@@ -1,4 +1,3 @@
-// --- ① DECLARACIÓN DE LA CLASE SOLICITADA ---
 class Evaluadores {
     constructor(revisor) {
         this.revisor = revisor;
@@ -7,7 +6,6 @@ class Evaluadores {
     }
 }
 
-// --- LISTA DE INTEGRANTES CON SUS ENLACES DIRECTOS A GITHUB ---
 const INTEGRANTES = [
     { nombre: "Aya", github: "https://github.com/ayaelo9" },
     { nombre: "Cristian", github: "https://github.com/xiles5" },
@@ -24,7 +22,7 @@ const INTEGRANTES = [
     { nombre: "Yordano", github: "https://github.com/yordano108" },
 ];
 
-// --- ② Y ③ FUNCIÓN ALGORÍTMICA PRINCIPAL ---
+
 const generarAsignaciones = (integrantes) => {
     if (!Array.isArray(integrantes) || integrantes.length < 2) return [];
     const cantidad = integrantes.length;
